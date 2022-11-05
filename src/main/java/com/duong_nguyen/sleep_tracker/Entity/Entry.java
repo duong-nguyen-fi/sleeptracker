@@ -15,7 +15,7 @@ import javax.persistence.Table;
 public class Entry {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @Column(name="entry_id")
+    @Column(name="id", unique = true)
     private long id;
 
     @Column(name="start", nullable = false, updatable = true)
@@ -25,7 +25,7 @@ public class Entry {
 
 
 
-    Duration duration;
+    //Duration duration;
 
     public Entry(Date start, Date end)
     {

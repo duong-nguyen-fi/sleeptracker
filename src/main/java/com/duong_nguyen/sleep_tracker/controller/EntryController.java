@@ -17,7 +17,7 @@ public class EntryController {
 
     @GetMapping(path = "/Entry")
     public Entry findEntryById(@RequestParam(name = "id", required = true) long EntryId ){
-        Optional<Entry> Entry = EntryService.findByEntryId(EntryId);
+        Optional<Entry> Entry = EntryService.findById(EntryId);
         if(Entry == null){
             throw new ErrorResponse( "Error: Entry_id="+EntryId +" not found ");
         }
