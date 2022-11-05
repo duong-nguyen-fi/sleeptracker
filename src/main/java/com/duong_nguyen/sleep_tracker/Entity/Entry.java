@@ -18,9 +18,9 @@ public class Entry {
     @Column(name="id", unique = true)
     private long id;
 
-    @Column(name="start", nullable = false, updatable = true)
+    @Column(name="startTime", nullable = false, updatable = true)
     private Date startDate;
-    @Column(name="end", nullable = false, updatable = true)
+    @Column(name="endTime", nullable = false, updatable = true)
     private Date endDate;
 
 

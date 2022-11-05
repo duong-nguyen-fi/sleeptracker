@@ -1,7 +1,7 @@
-DROP TABLE IF EXISTS ENTRY;
 
-CREATE TABLE entry (
+
+CREATE TABLE IF NOT EXISTS entry (
   id BIGINT AUTO_INCREMENT  PRIMARY KEY,
-  start timestamp NOT NULL,
-  end timestamp NOT NULL
+  startTime timestamp NOT NULL,
+  endTime timestamp NOT NULL
 );
